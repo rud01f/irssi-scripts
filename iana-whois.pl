@@ -59,10 +59,10 @@ sub iana_whois {
 			my @chans = $server->channels();
 			my $foundnick;
 			foreach my $chan (@chans) {
-				if ($foundnick = $chan->nick_find($nickorhost)) { last; }
+				if ($foundnick = $chan->nick_find($nickorhost)->{host}) { last; }
 			}
 			if (!defined $foundnick) {
-				printoutput("error -> nickname \"".$nickorhost."\" not found!");
+				printoutput("error -> nickname \"".$nickorhost."\" not found on any of synchronized channels!");
 				return; 
 			}
 			$lastnick = $foundnick->{nick};
