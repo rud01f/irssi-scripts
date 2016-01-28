@@ -5,8 +5,8 @@
 #
 # syntax:
 #
-#	/whois <nick/host/ip> [whois-server]
-#	/whois -last
+#	/ianawhois <nick/host/ip> [whois-server]
+#	/ianawhois -last
 #
 #
 
