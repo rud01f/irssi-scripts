@@ -12,13 +12,11 @@
 
 use strict;
 use vars qw($VERSION %IRSSI);
-use warnings;
 use Socket;
 
 use Irssi;
-use Nick;
 
-our $VERSION = "1.00";
+our $VERSION = "1.01";
 our %IRSSI = (
 	authors		=> 'rud0lf/IRCnet',
 	contact		=> 'rud0lf -> IRCnet',
