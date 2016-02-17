@@ -5,18 +5,17 @@
 #
 # syntax:
 #
-#	/ianawhois <nick/host/ip> [whois-server]
-#	/ianawhois -last
+#	/whois <nick/host/ip> [whois-server]
+#	/whois -last
 #
 #
 
 use strict;
-use vars qw($VERSION %IRSSI);
 use Socket;
 
 use Irssi;
 
-our $VERSION = "1.01";
+our $VERSION = "1.02";
 our %IRSSI = (
 	authors		=> 'rud0lf/IRCnet',
 	contact		=> 'rud0lf -> IRCnet',
@@ -103,7 +102,7 @@ sub iana_whois {
 		$line =~ s/\n//;
 		print($line);
 		if ($line =~ /whois:\s+(.+)/i) {
-			$lasthost = $1;
+			$lastserver = $1;
 			$redir = 1;
 		}
 	} 
