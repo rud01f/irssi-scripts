@@ -1,3 +1,4 @@
+#
 #    Copyright (C) 2015  Dawid Lekawski
 #      contact: xxrud0lf@gmail.com
 #
@@ -13,6 +14,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    
 #
 # whois (whois service query) irssi script
 #
