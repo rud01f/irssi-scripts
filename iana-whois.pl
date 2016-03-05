@@ -21,7 +21,11 @@
 # syntax:
 #
 #	/whois <nick/host/ip> [whois-server]
+#		performs whois service lookup (by default on whois.iana.org)
+#
 #	/whois -last
+#		retries whois lookup on recent host with whois server suggested by last query
+#
 #
 #
 
@@ -35,8 +39,8 @@ our %IRSSI = (
 	authors		=> 'rud0lf/IRCnet',
 	contact		=> 'rud0lf/IRCnet; xxrud0lf@gmail.com',
 	name		=> 'IANA whois script',
-	description	=> 'rud0lf`s testing script',
-	license		=> 'GPL',
+	description	=> 'queries whois service for given nick or address',
+	license		=> 'GPLv3',
 );
 
 our $lastserver = "";
